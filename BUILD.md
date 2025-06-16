@@ -94,10 +94,14 @@ python parse_pdf.py
 
 ---
 
-### 🔹 Step 2. Generate QA training data *(external)*
+### 🔹 Step 2. Generate QA training data with ChatGPT 4o mini
 
-- Use ChatGPT to create ~500 QA pairs from the chunked content  
-- Save as: `train_data.jsonl`  
+```bash
+python generate_training_data.py
+```
+
+- Uses OpenAI API to create ~500 question–answer pairs from `fm5_chunks.json`  
+- **Output:** `train_data.jsonl`  
 - Format:
 
 ```json
@@ -149,7 +153,3 @@ python search_chunks.py
 
 - Embeds document using `sentence-transformers`  
 - Enables natural-language search over FM 5-0 content
-
----
-
-
