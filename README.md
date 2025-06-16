@@ -22,7 +22,7 @@ python finetune_unsloth.py
 # 4. Evaluate base vs. fine-tuned model
 python evaluate_models.py
 
-# 5.  Semantic search with vector similarity
+# 5. Semantic search with vector similarity
 python search_chunks.py
 ```
 
@@ -38,17 +38,16 @@ python search_chunks.py
 - `search_chunks.py` — Bonus: semantic search over FM 5-0 using vector embeddings
 - `fm5_chunks.json` — Parsed and structured FM 5-0 document chunks
 - `unsloth_dataset.jsonl` — Final dataset formatted for LoRA fine-tuning
-- `finetuned_llama3_1b/` — Output directory containing adapter weights + tokenizer
-- `Build And Issues Log.pdf` — Documentation of setup process, bugs, and resolution steps
+- `Build And Issues Log.pdf` — Setup process, bugs, and troubleshooting log
 - `Math Foundations.pdf` — LaTeX write-up of mathematical methods used in training or evaluation
 
-### 🧾 Data Artifacts
-
-- `fm5_chunks.json`: Parsed FM 5-0 text, chunked for QA
-- `train_data.jsonl`: ChatGPT-labeled Q&A pairs
-- `unsloth_dataset.jsonl`: Final fine-tuning dataset
-- `finetuned_llama3_1b/`: Output folder with model + adapter weights
+> **Note:** Fine-tuned model weights (e.g., adapter files) are not included in this repository to keep the repo lightweight. The model can be re-trained by running `finetune_unsloth.py`.
 
 ---
 
+## 🧾 Data Artifacts
+
+- `fm5_chunks.json`: Parsed FM 5-0 text, chunked for QA
+- `unsloth_dataset.jsonl`: Formatted data used for fine-tuning
+- `train_data.jsonl`: Initial training examples generated from FM 5-0 content
 
