@@ -1,0 +1,23 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+
+# Ignore model weights/checkpoints
+finetuned_llama3_1b/
+*.bin
+*.safetensors
+*.pt
+
+# Ignore Jupyter/IPython checkpoints
+.ipynb_checkpoints/
+
+# VSCode config (if present)
+.vscode/
+
+# System files
+.DS_Store

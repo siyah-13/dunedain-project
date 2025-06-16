@@ -1,0 +1,9 @@
+torch>=2.4.0
+transformers>=4.40.0
+datasets
+peft
+accelerate
+trl
+sentence-transformers
+pymupdf
+unsloth @ git+https://github.com/unslothai/unsloth.git@3d49ad57762cb403d4da65f3dea84acd254a5c45
